@@ -157,9 +157,9 @@ body {
 
 
 .logo{
-  transform: scale(0.5);
+  transform: scale(0.3);
   position: absolute;
-  top: -60px;
+  top: -90px;
   left: 20px;
 }
 
