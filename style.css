@@ -1,0 +1,245 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  counter-reset: numbers;
+}
+
+::selection {
+  background-color: #26418d;
+  color: white;
+}
+
+#home:hover .desat, #navbar:hover #home .desat{
+  transition: all 1000ms;
+  filter: saturate(1);
+}
+
+.desat {
+  filter: saturate(0.1);
+  transition: filter 550ms;
+}
+
+.how__article:hover .desat,
+#que_hacemos:hover .how__title,
+.how__title:hover .desat,
+#casos_de_exito:hover h2,
+.timestamp:hover h3,
+#trabaja_con_nosotros:hover h2,
+#trabaja_con_nosotros:hover h3,
+#trabaja_con_nosotros:hover .email,
+.curriculum:hover
+{
+  filter: saturate(1);
+}
+
+/* .button__main {
+  background-color: #26418d;
+  transition: all 150ms;
+}
+
+.button__main:hover {
+  background-color: #01113e;
+} */
+
+#navbar li {
+  width: 150px;
+  text-align: center;
+  transition: all 150ms;
+}
+
+#navbar li:hover {
+  color: #F9614A;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.timeline{
+  margin: -64px;
+  transform: scale(.99);
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.active{
+  background:rgb(255, 250, 241);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1)
+}
+
+.timeline::-webkit-scrollbar{
+  display:none
+}
+
+.timestamp {
+  margin: 50px;
+  /* min-height: 100%; */
+  margin-right: 10px;
+  min-width: 30vw;
+  /* display: flex;
+    flex-direction: column;
+    flex: 1 */
+}
+
+.timestamp::before {
+  content: "";
+  width: 120%;
+  height: 5px;
+  background-color: rgb(211, 209, 209);
+  position: relative;
+  display: block;
+  top: 4px;
+}
+
+.timestamp h3::before {
+  /* counter-increment: numbers; */
+  /* content: counter(numbers); */
+  content:"";
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #26418d;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -10px;
+  /* transition: all 550ms; */
+}
+
+.speech-bubble {
+	position: relative;
+	/* background: #e7e7e7; */
+  border-radius: .4em;
+  padding: 1em;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(196, 196, 196);
+  border-bottom: 0;
+  border-right: 0;
+  margin-top: -22px;
+  margin-left: -22px;
+  background: white;
+  transform: rotate(-45deg) translate(-22px, 38px);
+}
+
+.retrato-color{
+  opacity: 0;
+  transition: all 200ms;
+  border: 2px solid orange;
+}
+
+#ramiro:hover .retrato-color, #sebastian:hover .retrato-color{
+  opacity: 1;
+}
+
+#quienes_somos:hover h2{
+  filter: saturate(1);
+}
+
+
+.logo{
+  transform: scale(0.5);
+  position: absolute;
+  top: -60px;
+  left: 20px;
+}
+
+.container {
+  height: 220px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box{
+	height: 80px;
+  width: 260px;
+	transition: all 200ms ease-in-out;
+	background-color: orange;
+	box-sizing: border-box;
+}
+
+
+#header:hover .box{
+  height: 200px;
+  width: 200px;
+}
+
+
+.punto {
+	content: "";
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	background-color: white;
+	left: 130px;
+	bottom: 80px;
+	visibility: hidden;
+	transition-delay: 50ms
+}
+
+#header:hover .punto{
+  visibility: visible;
+  transition: all 0ms
+}
+
+.punto::after {
+  content: "";
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: orange;
+  transition-delay: 0ms;
+  visibility: hidden;
+	transition: all 200ms cubic-bezier(.41,.01,.52,1.39);
+}
+
+#header:hover .punto::after {
+  transform: translateX(70px);
+  transition-delay: 150ms;
+  visibility: visible;
+}
+
+#header:hover .box{
+	height: 200px;
+}
+
+.logo__ross_blanco {
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+	font-size: 4.4em;
+	color: white;
+	transition: all 300ms cubic-bezier(.41,.01,.52,1.39);
+	position: absolute;
+  top: -10px;
+}
+
+#header:hover .logo__ross_blanco {
+	/* transform: translatey(0px); */
+  top: 180px;
+  color: black;
+}
+

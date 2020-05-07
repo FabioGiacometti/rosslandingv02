@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ROSS / Outside the Box</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="text-gray-900">
+  <div class="dark bg-white px-16">
+    <header id="header" class="pb-32 h-auto flex justify-end items-center pr-4 py-2">
+      <ul id="navbar" class="w-full flex w-2/5 justify-end items-center">
+        <!-- <li><img src="./Images/logo.png" class=" h-10" alt="" /></li> -->
+        <li class="logo">
+          <div class="container">
+            <div class="box"></div>
+            <h1 class="logo__ross logo__ross_blanco">ROSS</h1>
+          </div>
+
+          <div class="punto"></div>
+        </li>
+        <li><a href="#que_hacemos" onclick="hidenav()">What we do</a></li>
+        <li><a href="#quienes_somos" onclick="hidenav()">About Us</a></li>
+        <li><a href="#contacto" onclick="hidenav()">Contact us</a></li>
+        <!-- <li><a href="ROSS_Institutional_Brochure.pdf" onclick="hidenav()">Institutional</a></li> -->
+      </ul>
+
+      <div id="languajes">
+        <ul class="flex">
+          <li><a href="index.html" class=" mr-4" id="eng">ENG</a></li>
+          <li><a href="index-es.html" class=" " id="esp">ESP</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class=" ">
+      <section id="home" class="h-screen flex items-center pr-16 -mt-16">
+        <article class=" w-2/3 self-center flex flex-col justify-between">
+          <h1 class=" text-5xl leading-none font-light text-gray-900">We transform organizations with <span
+              class=" font-bold text-orange-500">innovative and unique</span> solutions.</h1>
+          <p class=" mt-8 text-lg">
+            We lead you on change and digital
+            transformation processes by building and offering "out of the box" solutions plus software / technology that
+            put the idea into practice. We focus only on adding value.
+          </p>
+          <div class=" flex flex-row mt-8">
+            <a href="#contacto"><button
+                class="py-2 px-6 border border-solid rounded rounded-xl border-orange-600">Contact
+                us</button></a>
+            <a href="#trabaja_con_nosotros"><button
+                class=" ml-4 py-2 px-6 border border-solid text-white rounded rounded-xl border-orange-600 bg-orange-500 hover:bg-orange-600">Work
+                With Us</button></a>
+          </div>
+        </article>
+        <img src="Images/hero.png" alt="teamwork image" class="desat hidden md:flex w-1/3 ">
+        <!-- 
+        <article>
+          <h2>
+           WE ARE INNOVATION DRIVEN
+          </h2>
+          <p>
+            We partner with companies and promote the development of the skills and innovative culture that will enable
+            their employees to reach their maximum potential. Using methodologies and practices, we carry out innovative
+            micro-projects. Yet we're always focused on the business. In turn, we schedule innovations, backed by our
+            tried experiences in every type of organization yielding quick results and a large return. We leave the our
+            'know-how' at the disposition of our clients.
+          </p>
+        </article> -->
+      </section>
+
+      <section id="que_hacemos" class="flex mt-16">
+        <h2 class=" text-5xl text-orange-500 py-24 w-1/4 leading-none font-bold tracking-tighter desat how__title">
+          How do we <br> do it.
+        </h2>
+        <div class=" w-3/4 flex flex-wrap">
+
+          <article class=" w-full pl-8 md:w-1/2 mt-4 how__article min-h-64">
+            <img src="./Images/Group.png" alt="Software Engineering" class=" desat" />
+            <div>
+              <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">SOFTWARE
+                <br />ENGINEERING</h3>
+              <p class=" mt-4">
+                We develop software with an agile and multi-disciplinary team. We focus on the needs of our clients and
+                generate <span class=" text-orange-500 font-bold desat">solutions that add value to the
+                  business</span> and
+                move it forward at the speed it deserves.
+              </p>
+            </div>
+          </article>
+
+          <article class=" w-full pl-8 md:w-1/2 mt-4 how__article min-h-64">
+            <img src="./Images/006-server.png" alt="Digital Transformation" class=" desat" />
+            <div>
+              <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">DIGITAL
+                <br />TRANSFORMATION
+              </h3>
+
+              <p class=" mt-4">
+                We design and lead digital transformation processes through personalized and scalable corporate
+                strategies. We apply technology to <span class=" text-orange-500 font-bold desat">solve real
+                  problems</span>, facilitating digitalized management and
+                automatizing operations to raise productivity and efficiency levels.
+              </p>
+            </div>
+          </article>
+
+          <article class=" w-full pl-8 md:w-1/2 mt-4 how__article min-h-64">
+            <img src="./Images/Group 2.png" alt="Culture" class=" desat" />
+            <div>
+              <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">INNOVATION<br />CULTURE
+              </h3>
+
+              <p class=" mt-4">
+                Culture is the foundation for the development of innovation and the sustainable implementation of any
+                digital transformation strategy. This is why we put <span
+                  class=" text-orange-500 font-bold desat">people
+                  first</span>. We teach and train them in
+                methodologies that are trending in the market, to help them solve challenges in a creative and
+                innovative
+                way, developing the skills of the future that will have an impact on the present.
+              </p>
+            </div>
+          </article>
+
+          <article class=" w-full pl-8 md:w-1/2 mt-4 how__article min-h-64">
+            <img src="./Images/024-link.png" alt="We Build Community" class=" desat" />
+            <div>
+              <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">SOLVING <br />COMMUNITY
+              </h3>
+
+              <p class=" mt-4">
+                We are part of an ecosystem that's in constant movement. We build relationships with associations,
+                public
+                organizations, non-profits, incubators, universities and other institutions. We help each other
+                mutually,
+                giving reinforcing skills that can be witnessed in projects and long-lasting relationships built on
+                trust.
+                <span class=" text-orange-500 font-bold desat">WE LOVE WHAT WE DO TOGETHER.</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="casos_de_exito">
+        <h2
+          class="mt-32 mb-16 text-5xl text-orange-500 py-24 leading-none font-bold tracking-tighter desat text-center">
+          Solutions Outside the Box
+        </h2>
+
+        <div class="timeline flex" style="overflow: scroll;" id="timeline">
+
+          <article class="timestamp">
+            <h3 class="text-xl font-bold text-orange-500 min-h-16 leading-none desat">
+              Data Engineering
+            </h3>
+            <p class="mt-4">
+              We work on different projects detecting anomalies, patterns and correlations in large groups of data. We
+              also use web crawlers to get the data from different sources and to translate it into valuable information
+              for your business.
+            </p>
+          </article>
+
+          <article class="timestamp">
+            <h3 class="text-xl font-bold text-orange-500 min-h-16 leading-none desat">
+              Software Engineering
+            </h3>
+            <p class="mt-4">
+              Alongside our clients, we work together to design platforms and ad hoc software applications. We lead the
+              projects in an agile fashion, applying methods and disciplines that make iterations fluid and ensure that
+              the results are as expected.
+            </p>
+          </article>
+
+          <article class="timestamp">
+            <h3 class="text-xl font-bold text-orange-500 min-h-16 leading-none desat">
+              Innovation Processes
+            </h3>
+            <p class="mt-4">
+              We partner with different companies in the implementation of agile methodologies and tools like Map Day
+              Planning, Kanban, and Scrum. We train employees in tools of disruptive thought such as Forced Analogy and
+              Heuristic Ideation and compel digital transformation and the development of new business models.
+            </p>
+          </article>
+
+          <article class="timestamp">
+            <h3 class="text-xl font-bold text-orange-500 min-h-16 leading-none desat">
+              Navigation Automation
+            </h3>
+
+            <p class="mt-4">
+              In partnership with our clients, we implement automation to increase their efficiency. This frees up time
+              spent on manual and operational labor, allowing the collaborators to focus their efforts on other tasks
+              such
+              as management and supervision. Additionally margins of error are reduced.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="quienes_somos">
+        <h2
+          class="text-center mt-32 text-5xl text-orange-500 py-24 w-1/4 leading-none font-bold tracking-tighter desat">
+          WHO WE ARE
+        </h2>
+
+        <div class="flex justify-evenly">
+          <article id="ramiro" class="transition transition-all duration-200 pl-8 w-2/5">
+            <div class="retrato flex items-center h-32 mb-8 ">
+              <img src="Images/rami_ortega_crop 2.jpg" alt=""
+                class="retrato-color h-32 w-32 rounded rounded-full absolute">
+              <img src="Images/rami_ortega_eng.jpg" alt="" class="h-32 w-32 rounded rounded-full">
+              <p class=" w-1/2 ml-8 speech-bubble">
+                "Making mistakes is normal. It's the only way to learn and move forward." <span
+                  class="font-bold text-orange-500">"If we
+                  make mistakes, we want them to be inexpensive ones in terms of time and money."
+              </p>
+            </div>
+
+            <h2 class="text-3xl font-bold text-blue-900">
+              Ramiro Ortega
+            </h2>
+            <h3 class="text-xl">
+              CO-Founder at ROSS
+            </h3>
+            <p class="text-lg mt-4">
+              I'm a Telecommunication Engineer and I have over 20 years of experience in software development and IT,
+              directing local and international projects for companies such as Personal, Intel and Kolektor. I consider
+              myself to be an entrepreneur by nature. My strength is development and guiding innovation as well as
+              directing teams with a high performance level. My focus is on making work more productive, efficient,
+              simple
+              and fun.
+            </p>
+          </article>
+
+          <article id="sebastian" class="transition transition-all duration-200 pl-8 w-2/5 ml-8">
+            <div class=" retrato flex items-center h-32 mb-8 ">
+              <img src="Images/seba_sosa_crop 2.jpg" alt=""
+                class="retrato-color h-32 w-32 rounded rounded-full absolute ">
+              <img src="Images/seba_sosa_eng.jpg" alt="" class="h-32 w-32 rounded rounded-full">
+              <p class=" w-1/2 ml-8 speech-bubble">
+                "Tell us something that hurts you." <span class="font-bold text-orange-500"> We analyze it together and
+                  bring
+                  solutions
+                  oriented towards your needs. </span>
+              </p>
+            </div>
+            <h2 class="text-3xl font-bold text-blue-900">
+              Sebastián Sosa
+            </h2>
+            <h3 class="text-xl">
+              CO-Founder at ROSS
+            </h3>
+            <p class="text-lg mt-4">
+              I have a 5-year-degree in Computer Systems, with ample experience with international companies like IBM,
+              Oracle and first-rate consulting agencies. I'm also an entrepreneur, extremely curious and passionate
+              about
+              technological challenges, converting data into information and I love coordinating large interdisciplinary
+              teams of millenials. I learn from them every day.
+            </p>
+          </article>
+        </div>
+        <h2 class="mt-16 text-center text-4xl font-bold text-blue-900">
+          +30 Talents and counting!
+        </h2>
+      </section>
+
+      <div class="flex flex-row items-center">
+      	<section id="trabaja_con_nosotros" class="flex flex-col justify-center align-center text-center w-1/2">
+      	  <img src="./Images/curriculum-en.png" alt="" class="curriculum w-auto self-start w-32 relative desat" style="left:25%; top:250px; transform: translate(-60%, -65%);" />
+      	  <h2 class="text-right text-5xl text-orange-500 w-1/4 leading-none font-bold tracking-tighter desat" style="z-index: 1;">
+      	    WORK WITH US
+      	  </h2>
+      
+      	  <article class="flex text-left text-xl w-3/4 self-center mt-16">
+      	    <h3 class="text-4xl leading-none text-right w-1/3 text-orange-400 leading-none font-bold tracking-tighter desat" >
+      	      Why ROSS?
+      	    </h3>
+      
+      	    <div class="ml-8">
+      	      <p class=" ">
+      	        If you tend to focus on problems in a way that's different and creative, this is the place for you!
+      	      </p>
+        
+      	      <p class=" ">
+      	        In ROSS you'll explore new possibilities, with real-life challenges where you'll be able to immerse
+      	        yourself in them, play, share and learn. We have the conviction that work done in a team is generosity.
+      	        Join us!
+      	      </p>
+      	      <p>
+      	        Send your resume to: <a href="mailto:rrhh@ross.com.ar"><span class="email text-orange-500 leading-none font-bold tracking-tighter desat">rrhh@ross.com.ar</span></a>
+      	      </p>
+      	    </div>
+      	  </article>
+      	</section>
+      
+      	<section id="contacto" class="w-1/2">
+          <p>
+            How can we help you? Do you have ideas or needs? Let's connect.
+          </p>
+      	  <h2>
+      	    Ask for a Quote
+      	  </h2>
+      	  <form action="" method="post" id="contact_form">
+      	    <input class=" input" name="name" type="text" id="nombre" placeholder="Full Name" /><br />
+      	    <input type="email" name="email" id="email" placeholder="Email">
+      	    <textarea class=" input" cols="30" rows="2" id="mensaje" placeholder="Tell us about yourself"></textarea>
+      	  </form>
+      	  <button class=" " onclick="submitForm(event)">enviar</button>
+      	</section>
+      </div>
+
+      <!-- <section id="donde_estamos">
+        <h2>
+          WHERE WE ARE
+        </h2>
+        <div class=" ">
+          <article class=" ">
+            <h2>
+              Córdoba, Argentina
+            </h2>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.4888412154605!2d-64.24094198555174!3d-31.37308190129648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432992db1023cdf%3A0xf11407cb052dd9f4!2sJos%C3%A9%20Roque%20Funes%201683%2C%20X5009%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1573064914921!5m2!1ses!2sar"
+                width="100%" height="240" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <p>
+              <span class=" bold">Address</span>: <br /> José Roque Funes 1683 - X5009 - City of Córdoba, <span
+                class=" bold">Argentina</span>. <br />
+              <span class=" bold">Telephone</span>: <br />
+              <span class=" bold">E-mail</span>: <br />
+            </p>
+          </article>
+  
+          <article class=" ">
+            <h2>
+              Barcelona, España
+            </h2>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.5336155487457!2d2.2050785145850367!3d41.44934040011662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bc926eed9781%3A0x853ede5b0b3c77eb!2sAvinguda%20de%20Santa%20Coloma%2C%2028%2C%2008922%20Santa%20Coloma%20de%20Gramenet%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1573065173000!5m2!1ses!2sar"
+                width="100%" height="240" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <p>
+              <span class=" ">Address:</span> Avinguda Santa Coloma 28 1-2ª - X08922 - Santa Coloma de Gramanet,
+              Barcelona, España. <br />
+              <span class=" ">Telephone</span>: +34 69560 2584 <br />
+              <span class=" ">E-mail</span>: jose.ortega@ross.com.ar <br />
+            </p>
+          </article>
+        </div>
+      </section> -->
+    </div>
+
+    <footer>
+      <article>
+        <div class=" "><img src="./Images/logon.png" alt="" class=" " /></div>
+        <ul>
+          <li><a href="#que_hacemos">What we do</a></li>
+          <li><a href="#quienes_somos">Who are we?</a></li>
+        </ul>
+        <ul>
+          <li><a href="#trabaja_con_nosotros">Work With Us</a></li>
+          <li><a href="#contacto">Contact us</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://www.instagram.com/ross_outsidethebox_/"><img src="Images/insta.png" alt=""></a></li>
+          <li><a href="https://www.linkedin.com/company/ross-outside-the-box/"><img src="Images/linkedin-brands.svg"
+                alt=""></a></li>
+        </ul>
+      </article>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
