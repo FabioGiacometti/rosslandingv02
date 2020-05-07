@@ -30,7 +30,8 @@ body {
 #trabaja_con_nosotros:hover h2,
 #trabaja_con_nosotros:hover h3,
 #trabaja_con_nosotros:hover .email,
-.curriculum:hover
+.curriculum:hover,
+#contacto:hover .desat
 {
   filter: saturate(1);
 }
@@ -51,7 +52,7 @@ body {
 }
 
 #navbar li:hover {
-  color: #F9614A;
+  color: #e1daf7;
   font-weight: bold;
   letter-spacing: -0.4px;
 }
@@ -239,7 +240,10 @@ body {
 
 #header:hover .logo__ross_blanco {
 	/* transform: translatey(0px); */
-  top: 180px;
+  top: 200px;
   color: black;
 }
 
+footer{
+  background-color: rgb(105, 105, 105);
+}
