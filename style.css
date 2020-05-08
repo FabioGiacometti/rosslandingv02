@@ -27,6 +27,7 @@ body {
 #que_hacemos:hover .how__title,
 .how__title:hover .desat,
 #casos_de_exito:hover h2,
+#casos_de_exito:hover img,
 .timestamp:hover h3,
 #trabaja_con_nosotros:hover h2,
 #trabaja_con_nosotros:hover h3,
@@ -37,14 +38,6 @@ body {
   filter: saturate(1);
 }
 
-/* .button__main {
-  background-color: #26418d;
-  transition: all 150ms;
-}
-
-.button__main:hover {
-  background-color: #01113e;
-} */
 #navbar{
   margin-right: 100px;
 }
@@ -116,7 +109,7 @@ body {
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  background-color: #26418d;
+  background-color: #5b86ff;
   position: relative;
   display: flex;
   align-items: center;
@@ -187,7 +180,6 @@ body {
 	box-sizing: border-box;
 }
 
-
 #header:hover .box{
   height: 200px;
   width: 200px;
@@ -251,6 +243,22 @@ body {
   color: black;
 }
 
+#casos_de_exito::after{
+  content: '→'; 
+  position: absolute;
+  font-size: 5em;
+  color:gray;
+  /* background-color: red; */
+  /* top: 100px; */
+  left:400px;
+  transform: translateY(-40px);
+}
+
 footer{
   background-color: rgb(105, 105, 105);
+}
+
+.upsales{
+  right: 0;
+  z-index: 0
 }
