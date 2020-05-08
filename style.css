@@ -275,7 +275,8 @@ html,body
 
   .timeline{
     flex-direction: column;
-    margin: auto;
+    margin: 0
+    /* margin: auto; */
   }
 
   .timestamp {
@@ -283,13 +284,17 @@ html,body
     /* min-height: 100%; */
     /* margin-right: 10px; */
     min-width: 50%;
+    padding:0 ;
+    margin:0;
+    margin-top: 10px
     /* display: flex;
       flex-direction: column;
       flex: 1 */
   }
   
   .timestamp::before {
-    display: none
+    /* display: none */
+    margin-bottom: 10px
   }
   
   .timestamp h3::before {
