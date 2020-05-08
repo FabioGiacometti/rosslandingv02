@@ -109,4 +109,13 @@ slider.addEventListener('mousemove', (e)=>{
   const walk = (x - startX) * 1.3
   // console.log(walk)
   slider.scrollLeft = scrollLeft - walk
+  console.log(scrollLeft)
 })
+
+function navigateRight(){
+  slider.scrollLeft += 500 
+}
+function navigateLeft(){
+  slider.scrollLeft = 0 
+}
+

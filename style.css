@@ -1,12 +1,9 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
 
-body {
-  counter-reset: numbers;
-}
 
 ::selection {
   background-color: #26418d;
@@ -42,18 +39,17 @@ body {
   margin-right: 100px;
 }
 
-#navbar li {
-  width: 120px;
+#navbar li a {
+  width: 150px;
   text-align: center;
-  transition: all 150ms;
+  transition: all 200ms;
   padding:8px;
-  border-radius: 5px
+  border-radius: 5px;
+  margin-right: 20px;
 }
 
-#navbar li:hover {
+#navbar li a:hover {
   background-color: #FFA73C;
-  font-weight: bold;
-  letter-spacing: -0.4px;
   color:white
 }
 
@@ -82,7 +78,7 @@ body {
 .timestamp {
   margin: 50px;
   /* min-height: 100%; */
-  margin-right: 10px;
+  /* margin-right: 10px; */
   min-width: 30vw;
   /* display: flex;
     flex-direction: column;
@@ -159,10 +155,11 @@ body {
 
 .logo{
   transform: scale(0.3);
-  position: absolute;
   top: -90px;
   left: 20px;
 }
+
+
 
 .container {
   height: 220px;
@@ -243,15 +240,15 @@ body {
   color: black;
 }
 
-#casos_de_exito::after{
-  content: '→'; 
-  position: absolute;
+#quienes_somos_flecha {
+  /* content: '→';  */
+  position: relative;
   font-size: 5em;
   color:gray;
   /* background-color: red; */
   /* top: 100px; */
-  left:400px;
-  transform: translateY(-40px);
+  left: 25vw;
+  /* transform: translateY(-40px); */
 }
 
 footer{
@@ -261,4 +258,52 @@ footer{
 .upsales{
   right: 0;
   z-index: 0
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+@media (max-width: 600px) {
+  .desat {
+    filter: saturate(.8);
+  }
+
+  .timeline{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .timestamp {
+    /* margin: 50px; */
+    /* min-height: 100%; */
+    /* margin-right: 10px; */
+    min-width: 50%;
+    /* display: flex;
+      flex-direction: column;
+      flex: 1 */
+  }
+  
+  .timestamp::before {
+    display: none
+  }
+  
+  .timestamp h3::before {
+    display: none
+  }
+}
+
+.slider_navigator{
+  left: 30%;
+  transform: scale(.5);
+}
+
+#quienes_somos_flecha_izquierda{
+  transform: rotate(180deg); 
+  margin-top: -3px; 
+  margin-right:25px
 }

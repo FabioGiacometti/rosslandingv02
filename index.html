@@ -12,12 +12,12 @@
 </head>
 
 
-<body class="text-gray-900">
-  <div class="dark bg-white px-16">
-    <header id="header" class="pb-32 h-auto flex justify-end items-center pr-4 py-2">
-      <ul id="navbar" class="w-full flex w-2/5 justify-end items-center">
-        <!-- <li><img src="./Images/logo.png" class=" h-10" alt="" /></li> -->
-        <li class="logo">
+<body class="text-gray-900 relative md:static ">
+  <div class="dark bg-white px-4 md:px-16">
+    <header id="header" class="md:pb-32 h-auto flex justify-between md:justify-end items-center pr-4 py-2">
+      <img src="./Images/logo.png" class="h-12 md:hidden" alt="" />
+      <ul id="navbar" class="hidden md:flex w-full w-2/5 justify-end items-center">
+        <li class="logo text-center absolute">
           <div class="container">
             <div class="box"></div>
             <h1 class="logo__ross logo__ross_blanco">ROSS</h1>
@@ -40,9 +40,9 @@
     </header>
 
     <div class=" ">
-      <section id="home" class="h-screen flex items-center pr-16 -mt-16">
-        <article class=" w-2/3 self-center flex flex-col justify-between">
-          <h1 class=" text-5xl leading-none font-light text-gray-900">We transform organizations with <span
+      <section id="home" class="md:h-screen flex items-center md:pr-16 mt-8 md:-mt-16">
+        <article class="w-full md:w-2/3 self-center flex flex-col justify-between">
+          <h1 class="text-3xl md:text-5xl leading-none font-light text-gray-900">We transform organizations with <span
               class=" font-bold text-orange-500">innovative and unique</span> solutions.</h1>
           <p class=" mt-8 text-lg">
             We lead you on change and digital
@@ -51,11 +51,11 @@
           </p>
           <div class=" flex flex-row mt-8">
             <a href="#contacto"><button
-                class="py-2 px-6 border border-solid rounded rounded-xl border-orange-600">Contact
-                us</button></a>
+                class=" py-2 px-6 border border-solid rounded rounded-xl border-orange-600">
+                Contact Us</button></a>
             <a href="#trabaja_con_nosotros"><button
-                class=" ml-4 py-2 px-6 border border-solid text-white rounded rounded-xl border-orange-600 bg-orange-500 hover:bg-orange-600">Work
-                With Us</button></a>
+                class="w-full ml-4 py-2 border border-solid text-white rounded rounded-xl border-orange-600 bg-orange-500 hover:bg-orange-600 md:px-6 ">
+                Work With Us</button></a>
           </div>
         </article>
         <img src="Images/hero.png" alt="teamwork image" class="desat hidden md:flex w-1/3 ">
@@ -74,21 +74,21 @@
         </article> -->
       </section>
 
-      <section id="que_hacemos" class="flex mt-16">
-        <div class="section-title w-1/4">
-          <h2 class=" text-5xl text-orange-500 pt-24  leading-none font-bold tracking-tighter desat how__title">
-            How do we <br> do it.
+      <section id="que_hacemos" class="flex flex-col md:flex-row mt:8 md:mt-16">
+        <div class="section-title md:w-1/4">
+          <h2 class="text-3xl md:text-5xl text-orange-500 pt-24  leading-none font-bold tracking-tighter desat how__title">
+            What we <br class="hidden md:block"> do.
           </h2>
-          <p class="leading-snug mt-4">This is how we approach and tackle situations</p>
+          <p class="hidden md:block leading-snug mt-4">This is our area of expertise.</p>
         </div>
-        <div class=" w-3/4 flex flex-wrap">
+        <div class="md:w-3/4 flex flex-wrap">
 
-          <article class=" w-full pl-12 md:w-1/2 mt-12 how__article min-h-64">
+          <article class="w-full md:pl-12 md:w-1/2 mt-12 how__article min-h-64">
             <img src="./Images/Group.png" alt="Software Engineering" class=" desat" />
             <div>
               <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">SOFTWARE
                 <br />ENGINEERING</h3>
-              <p class=" mt-4">
+              <p class="mt-4">
                 We develop software with an agile and multi-disciplinary team. We focus on the needs of our clients and
                 generate <span class=" text-orange-500 font-bold desat">solutions that add value to the
                   business</span> and
@@ -97,7 +97,7 @@
             </div>
           </article>
 
-          <article class=" w-full pl-12 md:w-1/2 mt-12 how__article min-h-64">
+          <article class=" w-full md:pl-12 md:w-1/2 mt-12 how__article min-h-64">
             <img src="./Images/006-server.png" alt="Digital Transformation" class=" desat" />
             <div>
               <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">DIGITAL
@@ -113,7 +113,7 @@
             </div>
           </article>
 
-          <article class=" w-full pl-12 md:w-1/2 mt-12 how__article min-h-64">
+          <article class=" w-full md:pl-12 md:w-1/2 mt-12 how__article min-h-64">
             <img src="./Images/Group 2.png" alt="Culture" class=" desat" />
             <div>
               <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">INNOVATION<br />CULTURE
@@ -131,7 +131,7 @@
             </div>
           </article>
 
-          <article class=" w-full pl-12 md:w-1/2 mt-12 how__article min-h-64">
+          <article class=" w-full md:pl-12 md:w-1/2 mt-12 how__article min-h-64">
             <img src="./Images/024-link.png" alt="We Build Community" class=" desat" />
             <div>
               <h3 class=" text-xl font-bold text-orange-400 leading-none mt-4 desat desat">SOLVING <br />COMMUNITY
@@ -152,21 +152,19 @@
       </section>
 
       <section id="casos_de_exito">
-        <h2 class="mt-56 text-5xl text-orange-500 leading-none font-bold tracking-tighter desat text-center">
-          Solutions Outside the Box
+        <h2 class="mt-16 md:mt-56 text-3xl md:text-5xl text-orange-500 leading-none font-bold tracking-tighter desat md:text-center">
+          How do we do it
         </h2>
-        <p class="leading-snug mt-4 mb-16 text-center">This is our area of expertise.</p>
+        <p class="leading-snug mt-4 mb-16 md:text-center">This is how we approach and tackle situations.</p>
 
-        <div class="timeline flex" style="overflow: scroll;" id="timeline">
-
-
-          <img src="Images/solutions.png" alt="innovating team" class="h-64 desat innovation">
+        <div class="timeline flex overflow-scroll" id="timeline">
+          <img src="Images/solutions.png" alt="innovating team" class="hidden md:block h-64 desat innovation">
 
           <article class="timestamp">
-            <h3 class="text-xl font-bold text-orange-500 min-h-16 leading-none desat">
+            <h3 class="text-xl font-bold text-orange-500 md:min-h-16 leading-none desat">
               Data Engineering
             </h3>
-            <p class="mt-4">
+            <p class="md:mt-4">
               We work on different projects detecting anomalies, patterns and correlations in large groups of data. We
               also use web crawlers to get the data from different sources and to translate it into valuable information
               for your business.
@@ -194,12 +192,12 @@
               Heuristic Ideation and compel digital transformation and the development of new business models.
             </p>
           </article>
-
+          
           <article class="timestamp">
             <h3 class="text-xl font-bold text-orange-500 min-h-16 leading-none desat">
               Navigation Automation
             </h3>
-
+            
             <p class="mt-4">
               In partnership with our clients, we implement automation to increase their efficiency. This frees up time
               spent on manual and operational labor, allowing the collaborators to focus their efforts on other tasks
@@ -208,10 +206,14 @@
             </p>
           </article>
         </div>
+        <div class="slider_navigator flex absolute">
+          <img src="Images/iconmonstr-arrow-right-thin.png" id="quienes_somos_flecha_izquierda" class="hidden md:block h-16 relative" onclick="navigateLeft()">
+          <img src="Images/iconmonstr-arrow-right-thin.png" id="quienes_somos_flecha_derecha" class="hidden md:block h-16 relative" onclick="navigateRight()">
+        </div>
       </section>
-
+      
       <section id="quienes_somos">
-        <h2 class="mt-56 text-5xl text-orange-500 leading-none font-bold tracking-tighter desat">
+        <h2 class="mt-56 text-3xl md:text-5xl text-orange-500 leading-none font-bold tracking-tighter desat">
           WHO WE ARE
         </h2>
         <p class="leading-snug mt-2">40+ years of combined experience in the field</p>
@@ -280,7 +282,7 @@
 
       <section id="trabaja_con_nosotros" class="flex flex-col justify-center align-center text-center mt-56">
         <div class="flex">
-          <h2 class=" text-5xl text-orange-500 leading-none font-bold tracking-tighter desat" style="z-index: 1;">
+          <h2 class="text-3xl md:text-5xl text-orange-500 leading-none font-bold tracking-tighter desat" style="z-index: 1;">
             WORK WITH US!
           </h2>
 
@@ -315,7 +317,7 @@
 
       <section id="contacto" class="mt-56 flex relative z-10">
         <div>
-          <h2 class="text-left text-5xl text-orange-500 leading-none font-bold tracking-tighter desat">Let's connect.
+          <h2 class="text-lefttext-3xl md:text-5xl text-orange-500 leading-none font-bold tracking-tighter desat">Let's connect.
           </h2>
           <button class="mt-16 text-xl desat">
             <a href="mailto:info@ross.com.ar"><span
