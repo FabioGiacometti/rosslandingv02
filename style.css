@@ -173,7 +173,7 @@
 	height: 80px;
   width: 260px;
 	transition: all 200ms ease-in-out;
-	background-color: orange;
+	background-color: #F58638;
 	box-sizing: border-box;
 }
 
@@ -207,7 +207,7 @@
 	height: 40px;
 	border-radius: 50%;
 	position: absolute;
-	background-color: orange;
+	background-color: #F58638;
   transition-delay: 0ms;
   visibility: hidden;
 	transition: all 200ms cubic-bezier(.41,.01,.52,1.39);
@@ -232,12 +232,16 @@
 	transition: all 300ms cubic-bezier(.41,.01,.52,1.39);
 	position: absolute;
   top: -10px;
+  mix-blend-mode: lighten;
+  filter: invert(1)
 }
 
 #header:hover .logo__ross_blanco {
 	/* transform: translatey(0px); */
   top: 200px;
   color: black;
+  filter: invert(0)
+
 }
 
 #quienes_somos_flecha {
